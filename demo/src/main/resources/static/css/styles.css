@@ -1,4 +1,50 @@
-h1 {
-    color: #f89820;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #5382A1; 
+}
+
+header {
+    background-color: #5382A1; 
+    color: white;
+    padding: 20px;
     text-align: center;
+}
+
+header .site-title {
+    font-size: 3em;
+    margin: 0;
+}
+
+header .description {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+.content {
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
