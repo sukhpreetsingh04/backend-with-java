@@ -16,7 +16,7 @@ we'll learn backend with java as main programming language.
 2. Creating the Main Class
 ✅ Define the main entry point for the application
 
-``Java``
+```Java
 package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
@@ -28,6 +28,7 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 }
+```
 
 ✅ @SpringBootApplication → Enables auto-configuration and component scanning.
 ✅ SpringApplication.run(DemoApplication.class, args); → Starts the Spring Boot application.
@@ -36,6 +37,7 @@ public class DemoApplication {
 3. Adding a Simple REST API
 ✅ Create a basic controller to return a message:
 
+```java
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -46,6 +48,7 @@ public class HelloController {
         return "Hello, Java Backend!";
     }
 }
+```
 
 ✅ @RestController → Marks this class as a web controller.
 ✅ @GetMapping("/") → Defines a GET request for /.
@@ -55,10 +58,11 @@ public class HelloController {
 ✅ Ensure spring-boot-starter-web dependency is included.
 ✅ If errors occur, update build.gradle or pom.xml:
 
-
+```gradle
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }
+```
 
 ✅ Run ./gradlew build or mvn clean install to refresh dependencies.
 
