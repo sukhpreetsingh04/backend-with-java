@@ -6,20 +6,20 @@ we'll learn backend with java as main programming language.
 
 # Java Backend Development Notes (Spring Boot)
 1. Setting Up the Project
-2. ✅ Use Spring Initializr to generate a Spring Boot project.
+    ✅ Use Spring Initializr to generate a Spring Boot project.
 
-✅ Select Spring Boot 3.4.5 (latest stable).
+    ✅ Select Spring Boot 3.4.5 (latest stable).
 
-✅ Choose Gradle (Groovy DSL) for dependency management.
+    ✅ Choose Gradle (Groovy DSL) for dependency management.
 
-✅ Add required dependencies:
+    ✅ Add required dependencies:
 
 - Spring Web → Enables backend web services.
 - Spring Boot DevTools → Helps with fast development.
 
 2. Creating the Main Class
    
-✅ Define the main entry point for the application
+    ✅ Define the main entry point for the application
 
 ```Java
 package com.example.demo;
@@ -36,14 +36,14 @@ public class DemoApplication {
 ```
 
 
-✅ @SpringBootApplication → Enables auto-configuration and component scanning.
+   ✅ @SpringBootApplication → Enables auto-configuration and component scanning.
 
-✅ SpringApplication.run(DemoApplication.class, args); → Starts the Spring Boot application.
+   ✅ SpringApplication.run(DemoApplication.class, args); → Starts the Spring Boot application.
 
 
 3. Adding a Simple REST API
    
-✅ Create a basic controller to return a message:
+   ✅ Create a basic controller to return a message:
 
 ```java
 import org.springframework.web.bind.annotation.GetMapping;
@@ -59,17 +59,17 @@ public class HelloController {
 ```
 
 
-✅ @RestController → Marks this class as a web controller.
+   ✅ @RestController → Marks this class as a web controller.
 
-✅ @GetMapping("/") → Defines a GET request for /.
+   ✅ @GetMapping("/") → Defines a GET request for /.
 
-✅ Running this will display Hello, Java Backend! at http://localhost:8080/.
+   ✅ Running this will display Hello, Java Backend! at http://localhost:8080/.
 
 4. Resolving Import Errors
    
-✅ Ensure spring-boot-starter-web dependency is included.
+   ✅ Ensure spring-boot-starter-web dependency is included.
 
-✅ If errors occur, update build.gradle or pom.xml:
+   ✅ If errors occur, update build.gradle or pom.xml:
 
 ```gradle
 dependencies {
@@ -78,15 +78,15 @@ dependencies {
 ```
 
 
-✅ Run ./gradlew build or mvn clean install to refresh dependencies.
+   ✅ Run ./gradlew build or mvn clean install to refresh dependencies.
 
 5. Running the Server
    
-✅ Start the application → Run DemoApplication.main().
+   ✅ Start the application → Run DemoApplication.main().
 
-✅ Open browser/Postman → Go to http://localhost:8080/.
+   ✅ Open browser/Postman → Go to http://localhost:8080/.
 
-✅ Verify response → "Hello, Java Backend!"
+   ✅ Verify response → "Hello, Java Backend!"
 
 
 
