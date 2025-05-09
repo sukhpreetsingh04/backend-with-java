@@ -31,3 +31,41 @@ public class DemoApplication {
 
 ✅ @SpringBootApplication → Enables auto-configuration and component scanning.
 ✅ SpringApplication.run(DemoApplication.class, args); → Starts the Spring Boot application.
+
+
+3. Adding a Simple REST API
+✅ Create a basic controller to return a message:
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+    @GetMapping("/")
+    public String home() {
+        return "Hello, Java Backend!";
+    }
+}
+
+✅ @RestController → Marks this class as a web controller.
+✅ @GetMapping("/") → Defines a GET request for /.
+✅ Running this will display Hello, Java Backend! at http://localhost:8080/.
+
+4. Resolving Import Errors
+✅ Ensure spring-boot-starter-web dependency is included.
+✅ If errors occur, update build.gradle or pom.xml:
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+✅ Run ./gradlew build or mvn clean install to refresh dependencies.
+
+5. Running the Server
+✅ Start the application → Run DemoApplication.main().
+✅ Open browser/Postman → Go to http://localhost:8080/.
+✅ Verify response → "Hello, Java Backend!"
+
+
+
