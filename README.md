@@ -6,8 +6,7 @@ we'll learn backend with java as main programming language.
 
 # Java Backend Development Notes (Spring Boot)
 1. Setting Up the Project
-2. 
-✅ Use Spring Initializr to generate a Spring Boot project.
+2. ✅ Use Spring Initializr to generate a Spring Boot project.
 
 ✅ Select Spring Boot 3.4.5 (latest stable).
 
@@ -82,8 +81,11 @@ dependencies {
 ✅ Run ./gradlew build or mvn clean install to refresh dependencies.
 
 5. Running the Server
+   
 ✅ Start the application → Run DemoApplication.main().
+
 ✅ Open browser/Postman → Go to http://localhost:8080/.
+
 ✅ Verify response → "Hello, Java Backend!"
 
 
